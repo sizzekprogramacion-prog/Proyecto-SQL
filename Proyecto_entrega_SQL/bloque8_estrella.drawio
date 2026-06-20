@@ -1,0 +1,184 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Diagrama" id="diag1">
+    <mxGraphModel dx="900" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+<mxCell id="hechoventas" value="HechoVentas (Hecho)" style="swimlane;html=1;startSize=30;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=0;resizeParentMax=0;collapsible=0;marginBottom=0;swimlaneFillColor=#ffffff;" vertex="1" parent="1">
+  <mxGeometry x="420" y="280" width="300" height="498" as="geometry"/>
+</mxCell>
+<mxCell id="hechoventas_r0" value="id_hecho : INT  (PK)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="hechoventas">
+  <mxGeometry y="30" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="hechoventas_r1" value="id_tiempo : INT  (FK)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="hechoventas">
+  <mxGeometry y="56" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="hechoventas_r2" value="id_cliente_sk : INT  (FK)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="hechoventas">
+  <mxGeometry y="82" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="hechoventas_r3" value="id_producto_sk : INT  (FK)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="hechoventas">
+  <mxGeometry y="108" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="hechoventas_r4" value="id_venta_nk : INT" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="hechoventas">
+  <mxGeometry y="134" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="hechoventas_r5" value="id_cliente_nk : INT" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="hechoventas">
+  <mxGeometry y="160" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="hechoventas_r6" value="id_producto_nk : INT" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="hechoventas">
+  <mxGeometry y="186" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="hechoventas_r7" value="cantidad : INT" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="hechoventas">
+  <mxGeometry y="212" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="hechoventas_r8" value="precio_unitario : DECIMAL(10,2)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="hechoventas">
+  <mxGeometry y="238" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="hechoventas_r9" value="monto_bruto_linea : DECIMAL(12,2)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="hechoventas">
+  <mxGeometry y="264" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="hechoventas_r10" value="descuento_pct : DECIMAL(5,2)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="hechoventas">
+  <mxGeometry y="290" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="hechoventas_r11" value="monto_descuento : DECIMAL(12,2)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="hechoventas">
+  <mxGeometry y="316" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="hechoventas_r12" value="monto_neto_linea : DECIMAL(12,2)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="hechoventas">
+  <mxGeometry y="342" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="hechoventas_r13" value="total_venta : DECIMAL(12,2)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="hechoventas">
+  <mxGeometry y="368" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="hechoventas_r14" value="estado_venta : VARCHAR(20)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="hechoventas">
+  <mxGeometry y="394" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="hechoventas_r15" value="anio_venta : SMALLINT" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="hechoventas">
+  <mxGeometry y="420" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="hechoventas_r16" value="mes_venta : TINYINT" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="hechoventas">
+  <mxGeometry y="446" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="hechoventas_r17" value="trimestre_venta : TINYINT" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="hechoventas">
+  <mxGeometry y="472" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimtiempo" value="DimTiempo (Dimension)" style="swimlane;html=1;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=0;resizeParentMax=0;collapsible=0;marginBottom=0;swimlaneFillColor=#ffffff;" vertex="1" parent="1">
+  <mxGeometry x="420" y="20" width="260" height="342" as="geometry"/>
+</mxCell>
+<mxCell id="dimtiempo_r0" value="id_tiempo : INT  (PK)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimtiempo">
+  <mxGeometry y="30" width="260" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimtiempo_r1" value="fecha : DATE" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimtiempo">
+  <mxGeometry y="56" width="260" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimtiempo_r2" value="anio : SMALLINT" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimtiempo">
+  <mxGeometry y="82" width="260" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimtiempo_r3" value="trimestre : TINYINT" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimtiempo">
+  <mxGeometry y="108" width="260" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimtiempo_r4" value="mes : TINYINT" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimtiempo">
+  <mxGeometry y="134" width="260" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimtiempo_r5" value="nombre_mes : VARCHAR(20)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimtiempo">
+  <mxGeometry y="160" width="260" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimtiempo_r6" value="semana_anio : TINYINT" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimtiempo">
+  <mxGeometry y="186" width="260" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimtiempo_r7" value="dia_mes : TINYINT" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimtiempo">
+  <mxGeometry y="212" width="260" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimtiempo_r8" value="dia_semana : TINYINT" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimtiempo">
+  <mxGeometry y="238" width="260" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimtiempo_r9" value="nombre_dia : VARCHAR(20)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimtiempo">
+  <mxGeometry y="264" width="260" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimtiempo_r10" value="es_fin_semana : BOOLEAN" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimtiempo">
+  <mxGeometry y="290" width="260" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimtiempo_r11" value="anio_mes : CHAR(7)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimtiempo">
+  <mxGeometry y="316" width="260" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimcliente" value="DimCliente (Dimension)" style="swimlane;html=1;startSize=30;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=0;resizeParentMax=0;collapsible=0;marginBottom=0;swimlaneFillColor=#ffffff;" vertex="1" parent="1">
+  <mxGeometry x="40" y="280" width="300" height="316" as="geometry"/>
+</mxCell>
+<mxCell id="dimcliente_r0" value="id_cliente_sk : INT  (PK)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimcliente">
+  <mxGeometry y="30" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimcliente_r1" value="id_cliente_nk : INT" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimcliente">
+  <mxGeometry y="56" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimcliente_r2" value="nombre_completo : VARCHAR(210)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimcliente">
+  <mxGeometry y="82" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimcliente_r3" value="email : VARCHAR(150)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimcliente">
+  <mxGeometry y="108" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimcliente_r4" value="telefono : VARCHAR(20)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimcliente">
+  <mxGeometry y="134" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimcliente_r5" value="direccion : VARCHAR(100)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimcliente">
+  <mxGeometry y="160" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimcliente_r6" value="ciudad : VARCHAR(100)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimcliente">
+  <mxGeometry y="186" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimcliente_r7" value="fecha_registro : DATE" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimcliente">
+  <mxGeometry y="212" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimcliente_r8" value="anio_registro : SMALLINT" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimcliente">
+  <mxGeometry y="238" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimcliente_r9" value="segmento : ENUM('VIP','FRECUENTE','OCASIONAL','NUEVO')" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimcliente">
+  <mxGeometry y="264" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimcliente_r10" value="fecha_carga_dw : DATETIME" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimcliente">
+  <mxGeometry y="290" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimproducto" value="DimProducto (Dimension)" style="swimlane;html=1;startSize=30;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=14;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=0;resizeParentMax=0;collapsible=0;marginBottom=0;swimlaneFillColor=#ffffff;" vertex="1" parent="1">
+  <mxGeometry x="800" y="280" width="300" height="290" as="geometry"/>
+</mxCell>
+<mxCell id="dimproducto_r0" value="id_producto_sk : INT  (PK)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimproducto">
+  <mxGeometry y="30" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimproducto_r1" value="id_producto_nk : INT" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimproducto">
+  <mxGeometry y="56" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimproducto_r2" value="nombre_producto : VARCHAR(150)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimproducto">
+  <mxGeometry y="82" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimproducto_r3" value="descripcion : TEXT" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimproducto">
+  <mxGeometry y="108" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimproducto_r4" value="id_categoria : INT" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimproducto">
+  <mxGeometry y="134" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimproducto_r5" value="nombre_categoria : VARCHAR(100)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimproducto">
+  <mxGeometry y="160" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimproducto_r6" value="rango_precio : ENUM('ECONOMICO','MEDIO','PREMIUM')" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimproducto">
+  <mxGeometry y="186" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimproducto_r7" value="precio_actual : DECIMAL(10,2)" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimproducto">
+  <mxGeometry y="212" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimproducto_r8" value="activo : BOOLEAN" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimproducto">
+  <mxGeometry y="238" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="dimproducto_r9" value="fecha_carga_dw : DATETIME" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=10;fontSize=12;strokeColor=#6c8ebf;" vertex="1" parent="dimproducto">
+  <mxGeometry y="264" width="300" height="26" as="geometry"/>
+</mxCell>
+<mxCell id="rel_ht" value="id_tiempo" style="edgeStyle=entityRelationEdgeStyle;html=1;endArrow=ERmany;startArrow=ERone;fontSize=12;" edge="1" parent="1" source="dimtiempo" target="hechoventas">
+  <mxGeometry relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="rel_hc" value="id_cliente_sk" style="edgeStyle=entityRelationEdgeStyle;html=1;endArrow=ERmany;startArrow=ERone;fontSize=12;" edge="1" parent="1" source="dimcliente" target="hechoventas">
+  <mxGeometry relative="1" as="geometry"/>
+</mxCell>
+<mxCell id="rel_hp" value="id_producto_sk" style="edgeStyle=entityRelationEdgeStyle;html=1;endArrow=ERmany;startArrow=ERone;fontSize=12;" edge="1" parent="1" source="dimproducto" target="hechoventas">
+  <mxGeometry relative="1" as="geometry"/>
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

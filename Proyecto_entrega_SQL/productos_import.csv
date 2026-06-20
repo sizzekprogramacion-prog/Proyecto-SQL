@@ -1,0 +1,15 @@
+id_categoria,nombre,descripcion,precio,stock,activo
+1,Monitor 27" 4K,Monitor UHD con panel IPS,89500.00,30,1
+1,Teclado Mecánico,Teclado gaming switches Blue,15200.00,75,1
+1,Mouse Inalámbrico,Mouse ergonómico 2.4GHz,8900.00,120,1
+2,Pantalón Jean,Jean slim fit talle 32,7800.00,90,1
+2,Remera básica,Remera 100% algodón talle M,3500.00,200,1
+3,Yerba Mate 500g,Yerba con palo selección especial,1850.00,400,1
+3,Café molido 500g,Café de altura tostado oscuro,2800.00,300,1
+4,Escritorio plegable,Escritorio compacto 120x60cm,38000.00,15,1
+5,Zapatillas running,Zapatillas amortiguación máxima,-500.00,40,1
+6,Libro Python,Aprende Python desde cero,4200.00,60,1
+1,Smartphone X12,Teléfono inteligente 128 GB,75000.00,50,1
+,Auriculares BT,Auriculares inalámbricos sin categoria,18500.00,80,1
+2,Campera invierno,Campera con relleno sintético,PRECIO_INVALIDO,60,1
+1,,Producto sin nombre,,25,1
